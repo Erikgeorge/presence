@@ -1,11 +1,11 @@
 const resizeAlert = function() {
     let pageWidth = window.innerWidth;
-    if(pageWidth < 473 && ! resizeAlert.called){
+    if(pageWidth < 473 && resizeAlert.called === false){
         alert("Turn your screen sideways for a more pleasant Presence experience.")
     }
 };
 
-window.resize = resizeAlert;
+window.onresize = resizeAlert;
 
 const navClicker = function(event) {
 	let pageLoc = event.target.id; // sets pageLoc to the ID of what was clicked
