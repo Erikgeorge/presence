@@ -5,7 +5,7 @@ const resizeAlert = function() {
     }
 };
 
-window.onresize = resizeAlert;
+window.onload = resizeAlert;
 
 const navClicker = function(event) {
 	let pageLoc = event.target.id; // sets pageLoc to the ID of what was clicked
